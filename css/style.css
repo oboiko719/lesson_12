@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"] {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  padding: 5px;
+}
+
+.header {
+  background-color: rgb(224, 193, 193);
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  z-index: 100;
+}
+
+.body {
+  background-color:dimgrey;
+}
+
+
+.section {
+  padding: 10px;
+}
+
+.section__title {
+  font-size: 20px;
+  text-align: center ;
+  margin-bottom: 55px;
+}
+
+.section--translate .title {
+  margin-top: 55px;
+}
+
+.section__body {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(224, 193, 193, 0.8);
+  margin: 0 auto;
+  perspective: 250px;
+  perspective-origin: center;
+}
+
+.section__item {
+  width: 350px;
+  height: 350px;
+  background-color:darkcyan;
+  background: url(../img/squirre.jpg) 0 0 / cover no-repeat;
+}
+
+.section--translate:hover .section__item {
+  transform: translate(80%, -10%);
+}
+
+.section--scale:hover .section__item {
+  transform: scale(0.8);
+}
+
+.section--rotate:hover .section__item {
+  transform: rotate(50deg);
+  }
+
+.section--skew:hover .section__item {
+  transform: skew(10deg, 10deg)
+}
+
+.section--transform-origin:hover .section__item {
+  transform-origin: bottom;
+  transform: rotate(15deg);
+}
+
+.section--perspective:hover .section__item {
+  transform: rotateY(30deg);
+}
+
+.section--matrix:hover .section__item {
+  transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+
+.section--3d:hover .section__item {
+  transform: translate3d(22px,25px,25px) scale3d(0.5,0.5,0.5) rotate3d(1,1,1,20deg);
+}
+
+.section--transform-style .section__body {
+  perspective: 300px;
+  transform-style:preserve-3d;
+}
+
+.section--transform-style .section__item {
+  transform: rotateY(180deg);
+  transition: all 0.8s ease 0s;
+}
+
+.section--transform-style:hover .section__item {
+  transform: rotateY(0deg);
+}
+
+.section--backface-visibility:hover .section__item {
+  backface-visibility: hidden;
+  transform: rotateY(130deg);
+  
+}
+
+.footer {
+  background-color: rgb(224, 193, 193);
+  margin: 0 auto;  
+  width: 100%;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
